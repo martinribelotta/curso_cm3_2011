@@ -1,0 +1,157 @@
+Cmp-Mod V01 Created by CvPCB (2011-03-30)-stable date = dom 10 abr 2011 19:27:03 ART
+
+BeginCmp
+TimeStamp = /4DA1F7D4;
+Reference = C1;
+ValeurCmp = C;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /4DA1F7E5;
+Reference = C2;
+ValeurCmp = C;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /4DA1F7E0;
+Reference = C3;
+ValeurCmp = C;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /4DA1F7E3;
+Reference = C4;
+ValeurCmp = C;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /4DA13FF5;
+Reference = C5;
+ValeurCmp = C;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /4DA13F27;
+Reference = C6;
+ValeurCmp = C;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /4DA13BDC;
+Reference = C7;
+ValeurCmp = C;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /4DA13BEA;
+Reference = C8;
+ValeurCmp = C;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /4DA13E94;
+Reference = C9;
+ValeurCmp = C;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /4DA13BF7;
+Reference = C10;
+ValeurCmp = C;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /4DA13BF1;
+Reference = C11;
+ValeurCmp = C;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /4DA22DCE;
+Reference = C_POW1;
+ValeurCmp = CP_MINI;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /4DA22D88;
+Reference = C_POW2;
+ValeurCmp = C;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /4DA22DAF;
+Reference = C_POW3;
+ValeurCmp = CP_MINI;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /4DA22DF3;
+Reference = J2;
+ValeurCmp = DC_POWER_JACK;
+IdModule  = JACK_ALIM;
+EndCmp
+
+BeginCmp
+TimeStamp = /4DA20079;
+Reference = JP1;
+ValeurCmp = JUMPER;
+IdModule  = SIL-2;
+EndCmp
+
+BeginCmp
+TimeStamp = /4DA2002C;
+Reference = R1;
+ValeurCmp = R;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /4DA13FEF;
+Reference = SW1;
+ValeurCmp = SW_PUSH;
+IdModule  = Switch_TH_TL59;
+EndCmp
+
+BeginCmp
+TimeStamp = /4DA2298C;
+Reference = U1;
+ValeurCmp = STM32F105R8T6;
+IdModule  = LQFP64_Opendous;
+EndCmp
+
+BeginCmp
+TimeStamp = /4DA22D7B;
+Reference = U2;
+ValeurCmp = 1117;
+IdModule  = SOT223_Opendous;
+EndCmp
+
+BeginCmp
+TimeStamp = /4DA1F7CD;
+Reference = X1;
+ValeurCmp = CRYSTAL;
+IdModule  = QMONTRE;
+EndCmp
+
+BeginCmp
+TimeStamp = /4DA1F7C5;
+Reference = X2;
+ValeurCmp = CRYSTAL;
+IdModule  = HC49-US_Minimized;
+EndCmp
+
+EndListe
