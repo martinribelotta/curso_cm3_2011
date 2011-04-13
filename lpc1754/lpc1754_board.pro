@@ -1,14 +1,9 @@
-update=sáb 09 abr 2011 12:11:01 ART
-last_client=eeschema
+update=12/04/2011 10:20:56 p.m.
+last_client=cvpcb
 [general]
 version=1
 RootSch=lpc1754_board.sch
 BoardNm=lpc1754_board.brd
-[cvpcb]
-version=1
-NetIExt=.net
-[cvpcb/libraries]
-EquName1=devcms
 [common]
 NetDir=
 [pcbnew]
@@ -29,16 +24,15 @@ TxtLar=120
 MSegLar=150
 LastNetListRead=lpc1754_board.net
 [pcbnew/libraries]
+LibName1=connect
+LibName2=discret
+LibName3=pin_array
+LibName4=divers
+LibName5=libcms
+LibName6=display
+LibName7=valves
+LibName8=modules/opendous
 LibDir=
-LibName1=/home/martin/proyectos/curso_cortex_m3/lpc1754/modules/opendous
-LibName2=supports
-LibName3=connect
-LibName4=discret
-LibName5=pin_array
-LibName6=divers
-LibName7=libcms
-LibName8=display
-LibName9=valves
 [eeschema]
 version=1
 LibDir=
@@ -100,3 +94,8 @@ LibName26=opto
 LibName27=contrib
 LibName28=valves
 LibName29=library/opendous
+[cvpcb]
+version=1
+NetIExt=net
+[cvpcb/libraries]
+EquName1=devcms

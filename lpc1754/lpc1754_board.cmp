@@ -1,107 +1,107 @@
-Cmp-Mod V01 Created by CvPCB (2011-03-30)-stable date = dom 10 abr 2011 01:17:05 ART
+Cmp-Mod V01 Created by CvPCB (2011-03-30 BZR 2932)-stable date = 12/04/2011 10:21:27 p.m.
 
 BeginCmp
 TimeStamp = /4D9FBF16;
 Reference = C1;
-ValeurCmp = C_MINI;
+ValeurCmp = 0.1uF;
 IdModule  = SM0805_Opendous;
 EndCmp
 
 BeginCmp
 TimeStamp = /4D9FBEB8;
 Reference = C2;
-ValeurCmp = C_MINI;
+ValeurCmp = 18pf;
 IdModule  = SM0805_Opendous;
 EndCmp
 
 BeginCmp
 TimeStamp = /4D9FBEBE;
 Reference = C3;
-ValeurCmp = C_MINI;
+ValeurCmp = 18pf;
 IdModule  = SM0805_Opendous;
 EndCmp
 
 BeginCmp
 TimeStamp = /4D9FBEC2;
 Reference = C4;
-ValeurCmp = C_MINI;
+ValeurCmp = 18pf;
 IdModule  = SM0805_Opendous;
 EndCmp
 
 BeginCmp
 TimeStamp = /4D9FBEC5;
 Reference = C5;
-ValeurCmp = C_MINI;
+ValeurCmp = 18pf;
 IdModule  = SM0805_Opendous;
 EndCmp
 
 BeginCmp
 TimeStamp = /4D9FBB25;
 Reference = C6;
-ValeurCmp = C_MINI;
+ValeurCmp = 0.1uf;
 IdModule  = SM0805_Opendous;
 EndCmp
 
 BeginCmp
 TimeStamp = /4D9FBB1B;
 Reference = C7;
-ValeurCmp = C_MINI;
+ValeurCmp = 0.1uf;
 IdModule  = SM0805_Opendous;
 EndCmp
 
 BeginCmp
 TimeStamp = /4D9FBB17;
 Reference = C8;
-ValeurCmp = C_MINI;
+ValeurCmp = 0.1uf;
 IdModule  = SM0805_Opendous;
 EndCmp
 
 BeginCmp
 TimeStamp = /4D9FB60F;
 Reference = C9;
-ValeurCmp = C_MINI;
+ValeurCmp = 0.1uf;
 IdModule  = SM0805_Opendous;
 EndCmp
 
 BeginCmp
 TimeStamp = /4D9FBB78;
 Reference = C10;
-ValeurCmp = C_MINI;
+ValeurCmp = 0.1uf;
 IdModule  = SM0805_Opendous;
 EndCmp
 
 BeginCmp
 TimeStamp = /4D9FBB86;
 Reference = C11;
-ValeurCmp = C_MINI;
+ValeurCmp = 0.1uf;
 IdModule  = SM0805_Opendous;
 EndCmp
 
 BeginCmp
 TimeStamp = /4D9FBB89;
 Reference = C12;
-ValeurCmp = C_MINI;
+ValeurCmp = 0.1uf;
 IdModule  = SM0805_Opendous;
 EndCmp
 
 BeginCmp
 TimeStamp = /4D9FD554;
 Reference = C331;
-ValeurCmp = C_MINI;
+ValeurCmp = 0.1uf;
 IdModule  = SM0805_Opendous;
 EndCmp
 
 BeginCmp
 TimeStamp = /4D9FD574;
 Reference = C332;
-ValeurCmp = CP_TANTALUM_MINI;
+ValeurCmp = 10uf;
 IdModule  = SM0805_Opendous;
 EndCmp
 
 BeginCmp
 TimeStamp = /4D9FD59A;
 Reference = C_VIN1;
-ValeurCmp = CP_TANTALUM_MINI;
+ValeurCmp = 10uf;
 IdModule  = SM0805_Opendous;
 EndCmp
 
@@ -141,6 +141,13 @@ IdModule  = JACK_ALIM;
 EndCmp
 
 BeginCmp
+TimeStamp = /4DA4F950;
+Reference = P1;
+ValeurCmp = CONN_4X2;
+IdModule  = pin_array_4x2;
+EndCmp
+
+BeginCmp
 TimeStamp = /4DA07745;
 Reference = P_IO1;
 ValeurCmp = CONN_25X2;
@@ -150,56 +157,56 @@ EndCmp
 BeginCmp
 TimeStamp = /4D9FBF0A;
 Reference = R1;
-ValeurCmp = R_MINI;
+ValeurCmp = 10K;
 IdModule  = SM0805_Opendous;
 EndCmp
 
 BeginCmp
 TimeStamp = /4D9FCBFC;
 Reference = R2;
-ValeurCmp = R_MINI;
+ValeurCmp = 10K;
 IdModule  = SM0805_Opendous;
 EndCmp
 
 BeginCmp
 TimeStamp = /4D9FCC03;
 Reference = R3;
-ValeurCmp = R_MINI;
+ValeurCmp = 10K;
 IdModule  = SM0805_Opendous;
 EndCmp
 
 BeginCmp
 TimeStamp = /4D9FCC88;
 Reference = R4;
-ValeurCmp = R_MINI;
+ValeurCmp = 33R;
 IdModule  = SM0805_Opendous;
 EndCmp
 
 BeginCmp
 TimeStamp = /4D9FCC84;
 Reference = R5;
-ValeurCmp = R_MINI;
+ValeurCmp = 33R;
 IdModule  = SM0805_Opendous;
 EndCmp
 
 BeginCmp
 TimeStamp = /4D9FCF9B;
 Reference = R6;
-ValeurCmp = R_MINI;
+ValeurCmp = 1K5;
 IdModule  = SM0805_Opendous;
 EndCmp
 
 BeginCmp
 TimeStamp = /4DA082F4;
 Reference = R7;
-ValeurCmp = R_MINI;
+ValeurCmp = 10K;
 IdModule  = SM0805_Opendous;
 EndCmp
 
 BeginCmp
 TimeStamp = /4DA083A3;
 Reference = R8;
-ValeurCmp = R_MINI;
+ValeurCmp = 1K;
 IdModule  = SM0805_Opendous;
 EndCmp
 
@@ -208,13 +215,6 @@ TimeStamp = /4D9FBF77;
 Reference = SW1;
 ValeurCmp = SWITCH_PUSHBUTTON;
 IdModule  = Switch_TH_TL59;
-EndCmp
-
-BeginCmp
-TimeStamp = /4D9FC5A1;
-Reference = U3;
-ValeurCmp = CONN_CORTEX_DEBUG;
-IdModule  = PIN_ARRAY_5x2;
 EndCmp
 
 BeginCmp
@@ -227,14 +227,14 @@ EndCmp
 BeginCmp
 TimeStamp = /4D9FBEB2;
 Reference = X1;
-ValeurCmp = CRYSTAL_MINI;
+ValeurCmp = 32.768kHz;
 IdModule  = QMONTRE;
 EndCmp
 
 BeginCmp
 TimeStamp = /4D9FC2AC;
 Reference = X2;
-ValeurCmp = CRYSTAL_MINI;
+ValeurCmp = 25Mhz;
 IdModule  = HC49-US_Minimized;
 EndCmp
 
