@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date 12/04/2011 10:32:49 p.m.
+EESchema Schematic File Version 2  date sáb 16 abr 2011 13:00:25 ART
 LIBS:power
 LIBS:device
 LIBS:conn
@@ -35,7 +35,7 @@ $Descr A4 11700 8267
 encoding utf-8
 Sheet 1 1
 Title ""
-Date "13 apr 2011"
+Date "16 apr 2011"
 Rev ""
 Comp ""
 Comment1 ""
@@ -43,16 +43,36 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text Label 3800 5950 0    60   ~ 0
-TCK
-Text Label 3800 5850 0    60   ~ 0
-TRST
-Text Label 3800 5750 0    60   ~ 0
-TMS
-Text Label 3800 5650 0    60   ~ 0
-TDI
-Text Label 3800 5550 0    60   ~ 0
-TDO
+$Comp
+L +5V #PWR01
+U 1 1 4DA9B739
+P 8350 1450
+F 0 "#PWR01" H 8350 1540 20  0001 C CNN
+F 1 "+5V" H 8350 1540 30  0000 C CNN
+	1    8350 1450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8350 1450 8000 1450
+Connection ~ 8250 1450
+Connection ~ 2550 3500
+Wire Wire Line
+	2550 3500 2550 3950
+Wire Wire Line
+	3800 3500 4300 3500
+Wire Wire Line
+	3800 3300 3950 3300
+Wire Wire Line
+	3600 3400 2250 3400
+Connection ~ 2250 3350
+Wire Wire Line
+	2250 3400 2250 3300
+Wire Wire Line
+	2550 3950 2250 3950
+Wire Wire Line
+	2250 4150 2400 4150
+Wire Wire Line
+	2400 4150 2400 4300
 Wire Wire Line
 	4300 5950 3800 5950
 Wire Wire Line
@@ -69,19 +89,19 @@ Wire Wire Line
 	1600 4450 1600 4550
 Wire Wire Line
 	1600 4550 1750 4550
-Connection ~ 9700 4600
+Connection ~ 9050 2600
 Wire Wire Line
-	9700 4600 9700 4450
+	9050 2600 9050 2450
 Wire Wire Line
-	9700 4450 10950 4450
+	9050 2450 10300 2450
 Wire Wire Line
-	10950 4450 10950 4600
+	10300 2450 10300 2600
 Wire Wire Line
-	9600 4650 9600 4600
+	8950 2650 8950 2600
 Wire Wire Line
-	9600 4600 9800 4600
+	8950 2600 9150 2600
 Wire Wire Line
-	10600 7000 10700 7000
+	9950 5000 10050 5000
 Wire Wire Line
 	8300 1250 8300 1300
 Wire Wire Line
@@ -165,12 +185,6 @@ Wire Wire Line
 Connection ~ 9550 1250
 Wire Wire Line
 	10100 1250 10100 1350
-Wire Wire Line
-	3900 3300 3750 3300
-Wire Wire Line
-	3550 3500 1600 3500
-Wire Wire Line
-	3750 3400 4300 3400
 Wire Wire Line
 	3550 3800 3400 3800
 Connection ~ 3850 3650
@@ -309,22 +323,11 @@ Connection ~ 5600 6650
 Wire Wire Line
 	4300 6150 4050 6150
 Wire Wire Line
-	1600 3350 1600 3400
-Wire Wire Line
 	750  3500 850  3500
 Wire Wire Line
 	4300 3650 3750 3650
 Wire Wire Line
 	3550 3650 3450 3650
-Wire Wire Line
-	4300 3500 3750 3500
-Wire Wire Line
-	1600 3400 3550 3400
-Wire Wire Line
-	3550 3300 3350 3300
-Wire Wire Line
-	3350 3300 3350 3400
-Connection ~ 3350 3400
 Wire Wire Line
 	9450 1350 9550 1350
 Wire Wire Line
@@ -381,8 +384,6 @@ Wire Wire Line
 	10450 1700 8650 1700
 Connection ~ 10100 1700
 Wire Wire Line
-	8000 1450 8250 1450
-Wire Wire Line
 	8250 1550 8000 1550
 Connection ~ 8100 1550
 Wire Wire Line
@@ -400,16 +401,16 @@ Wire Wire Line
 Wire Wire Line
 	8250 1450 8250 1350
 Wire Wire Line
-	9650 7000 9800 7000
+	9000 5000 9150 5000
 Wire Wire Line
-	10950 4600 10600 4600
+	10300 2600 9950 2600
 Wire Wire Line
-	10700 7000 10700 7100
+	10050 5000 10050 5100
 Wire Wire Line
-	10700 7100 9750 7100
+	10050 5100 9100 5100
 Wire Wire Line
-	9750 7100 9750 7000
-Connection ~ 9750 7000
+	9100 5100 9100 5000
+Connection ~ 9100 5000
 Wire Wire Line
 	2700 4550 2550 4550
 Wire Wire Line
@@ -425,6 +426,71 @@ Wire Wire Line
 	4300 5650 3800 5650
 Wire Wire Line
 	4300 5850 3800 5850
+Wire Wire Line
+	2400 3750 2400 3850
+Wire Wire Line
+	2400 3850 2250 3850
+Wire Wire Line
+	2250 3350 1600 3350
+Wire Wire Line
+	2250 3300 3600 3300
+Wire Wire Line
+	4300 3400 3800 3400
+Wire Wire Line
+	3600 3500 1600 3500
+Wire Wire Line
+	2250 4050 2650 4050
+Wire Wire Line
+	2650 4050 2650 3400
+Connection ~ 2650 3400
+NoConn ~ 7500 4800
+NoConn ~ 4300 3200
+NoConn ~ 7500 3750
+NoConn ~ 7500 3650
+NoConn ~ 850  3600
+NoConn ~ 1600 3600
+NoConn ~ 7500 6250
+$Comp
+L GND #PWR02
+U 1 1 4DA9B271
+P 2400 4300
+F 0 "#PWR02" H 2400 4300 30  0001 C CNN
+F 1 "GND" H 2400 4230 30  0001 C CNN
+	1    2400 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR03
+U 1 1 4DA9B269
+P 2400 3750
+F 0 "#PWR03" H 2400 3840 20  0001 C CNN
+F 1 "+5V" H 2400 3840 30  0000 C CNN
+	1    2400 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L USB_2 J_HOST1
+U 1 1 4DA9B21C
+P 2050 4000
+F 0 "J_HOST1" H 1975 4250 60  0000 C CNN
+F 1 "USB_2" H 2100 3700 60  0001 C CNN
+F 4 "VCC" H 2375 4150 50  0001 C CNN "VCC"
+F 5 "D+" H 2350 4050 50  0001 C CNN "Data+"
+F 6 "D-" H 2350 3950 50  0001 C CNN "Data-"
+F 7 "GND" H 2375 3850 50  0001 C CNN "Ground"
+	1    2050 4000
+	1    0    0    -1  
+$EndComp
+Text Label 3800 5950 0    60   ~ 0
+TCK
+Text Label 3800 5850 0    60   ~ 0
+TRST
+Text Label 3800 5750 0    60   ~ 0
+TMS
+Text Label 3800 5650 0    60   ~ 0
+TDI
+Text Label 3800 5550 0    60   ~ 0
+TDO
 Text Label 2850 4650 0    60   ~ 0
 TDO
 Text Label 2850 4750 0    60   ~ 0
@@ -445,21 +511,21 @@ F 1 "CONN_4X2" V 2150 4700 40  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +3.3V #PWR01
+L +3.3V #PWR04
 U 1 1 4DA104BC
-P 9650 7000
-F 0 "#PWR01" H 9650 6960 30  0001 C CNN
-F 1 "+3.3V" H 9650 7110 30  0000 C CNN
-	1    9650 7000
+P 9000 5000
+F 0 "#PWR04" H 9000 4960 30  0001 C CNN
+F 1 "+3.3V" H 9000 5110 30  0000 C CNN
+	1    9000 5000
 	0    -1   -1   0   
 $EndComp
 $Comp
-L GND #PWR02
+L GND #PWR05
 U 1 1 4DA104B4
-P 9600 4650
-F 0 "#PWR02" H 9600 4650 30  0001 C CNN
-F 1 "GND" H 9600 4580 30  0001 C CNN
-	1    9600 4650
+P 8950 2650
+F 0 "#PWR05" H 8950 2650 30  0001 C CNN
+F 1 "GND" H 8950 2580 30  0001 C CNN
+	1    8950 2650
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -472,39 +538,39 @@ F 1 "JUMPER-3" H 8250 1250 30  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L VBUS #PWR03
+L VBUS #PWR06
 U 1 1 4DA0FD20
 P 8250 1050
-F 0 "#PWR03" H 8250 1150 30  0001 C CNN
+F 0 "#PWR06" H 8250 1150 30  0001 C CNN
 F 1 "VBUS" H 8250 1150 30  0000 C CNN
 	1    8250 1050
 	1    0    0    -1  
 $EndComp
-Text Label 10600 6900 0    60   ~ 0
+Text Label 9950 4900 0    60   ~ 0
 RESET
 Text Label 3200 3100 0    60   ~ 0
 RESET
-Text Label 9800 6900 0    60   ~ 0
+Text Label 9150 4900 0    60   ~ 0
 P0.3
-Text Label 10600 6800 0    60   ~ 0
+Text Label 9950 4800 0    60   ~ 0
 P0.2
-Text Label 9800 6800 0    60   ~ 0
+Text Label 9150 4800 0    60   ~ 0
 P1.0
-Text Label 10600 6700 0    60   ~ 0
+Text Label 9950 4700 0    60   ~ 0
 P1.1
-Text Label 9800 6700 0    60   ~ 0
+Text Label 9150 4700 0    60   ~ 0
 P1.4
-Text Label 10600 6600 0    60   ~ 0
+Text Label 9950 4600 0    60   ~ 0
 P1.8
-Text Label 9800 6600 0    60   ~ 0
+Text Label 9150 4600 0    60   ~ 0
 P1.9
-Text Label 10600 6500 0    60   ~ 0
+Text Label 9950 4500 0    60   ~ 0
 P1.10
-Text Label 9800 6500 0    60   ~ 0
+Text Label 9150 4500 0    60   ~ 0
 P1.14
-Text Label 10600 6400 0    60   ~ 0
+Text Label 9950 4400 0    60   ~ 0
 P1.15
-Text Label 9800 6400 0    60   ~ 0
+Text Label 9150 4400 0    60   ~ 0
 P4.29
 Text Label 7900 2850 0    60   ~ 0
 P0.3
@@ -538,10 +604,10 @@ F 1 "DC_POWER_JACK" H 7765 1625 25  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +3.3V #PWR04
+L +3.3V #PWR07
 U 1 1 4DA083BC
 P 9950 1150
-F 0 "#PWR04" H 9950 1110 30  0001 C CNN
+F 0 "#PWR07" H 9950 1110 30  0001 C CNN
 F 1 "+3.3V" H 9950 1260 30  0000 C CNN
 	1    9950 1150
 	1    0    0    -1  
@@ -556,19 +622,19 @@ F 1 "1K" H 10520 1500 20  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L +3.3V #PWR05
+L +3.3V #PWR08
 U 1 1 4DA08361
 P 8900 5800
-F 0 "#PWR05" H 8900 5760 30  0001 C CNN
+F 0 "#PWR08" H 8900 5760 30  0001 C CNN
 F 1 "+3.3V" H 8900 5910 30  0000 C CNN
 	1    8900 5800
 	0    1    1    0   
 $EndComp
 $Comp
-L GND #PWR06
+L GND #PWR09
 U 1 1 4DA08354
 P 8350 6250
-F 0 "#PWR06" H 8350 6250 30  0001 C CNN
+F 0 "#PWR09" H 8350 6250 30  0001 C CNN
 F 1 "GND" H 8350 6180 30  0001 C CNN
 	1    8350 6250
 	1    0    0    -1  
@@ -594,23 +660,23 @@ $EndComp
 $Comp
 L CONN_25X2 P_IO1
 U 1 1 4DA07745
-P 10200 5800
-F 0 "P_IO1" H 10200 7100 60  0000 C CNN
-F 1 "CONN_25X2" V 10200 5800 50  0000 C CNN
-	1    10200 5800
+P 9550 3800
+F 0 "P_IO1" H 9550 5100 60  0000 C CNN
+F 1 "CONN_25X2" V 9550 3800 50  0000 C CNN
+	1    9550 3800
 	1    0    0    -1  
 $EndComp
-Text Label 10600 6300 0    60   ~ 0
+Text Label 9950 4300 0    60   ~ 0
 P4.28
 Text Label 7900 5900 0    60   ~ 0
 P4.28
-Text Label 9800 6300 0    60   ~ 0
+Text Label 9150 4300 0    60   ~ 0
 P0.6
-Text Label 10600 6200 0    60   ~ 0
+Text Label 9950 4200 0    60   ~ 0
 P0.7
-Text Label 9800 6200 0    60   ~ 0
+Text Label 9150 4200 0    60   ~ 0
 P0.8
-Text Label 10600 6100 0    60   ~ 0
+Text Label 9950 4100 0    60   ~ 0
 P0.9
 Text Label 7900 2950 0    60   ~ 0
 P0.6
@@ -620,21 +686,21 @@ Text Label 7900 3150 0    60   ~ 0
 P0.8
 Text Label 7900 3250 0    60   ~ 0
 P0.9
-Text Label 9800 6100 0    60   ~ 0
+Text Label 9150 4100 0    60   ~ 0
 P2.0
-Text Label 10600 6000 0    60   ~ 0
+Text Label 9950 4000 0    60   ~ 0
 P2.1
-Text Label 9800 6000 0    60   ~ 0
+Text Label 9150 4000 0    60   ~ 0
 P2.2
-Text Label 10600 5900 0    60   ~ 0
+Text Label 9950 3900 0    60   ~ 0
 P2.3
-Text Label 9800 5900 0    60   ~ 0
+Text Label 9150 3900 0    60   ~ 0
 P2.4
-Text Label 10600 5800 0    60   ~ 0
+Text Label 9950 3800 0    60   ~ 0
 P2.5
-Text Label 9800 5800 0    60   ~ 0
+Text Label 9150 3800 0    60   ~ 0
 P2.6
-Text Label 10600 5700 0    60   ~ 0
+Text Label 9950 3700 0    60   ~ 0
 P2.7
 Text Label 7900 4950 0    60   ~ 0
 P2.0
@@ -652,19 +718,19 @@ Text Label 7900 5550 0    60   ~ 0
 P2.6
 Text Label 7900 5650 0    60   ~ 0
 P2.7
-Text Label 9800 5700 0    60   ~ 0
+Text Label 9150 3700 0    60   ~ 0
 P2.8
-Text Label 10600 5600 0    60   ~ 0
+Text Label 9950 3600 0    60   ~ 0
 P2.9
-Text Label 9800 5600 0    60   ~ 0
+Text Label 9150 3600 0    60   ~ 0
 P0.16
-Text Label 10600 5500 0    60   ~ 0
+Text Label 9950 3500 0    60   ~ 0
 P0.15
-Text Label 9800 5500 0    60   ~ 0
+Text Label 9150 3500 0    60   ~ 0
 P0.17
-Text Label 10600 5400 0    60   ~ 0
+Text Label 9950 3400 0    60   ~ 0
 P0.18
-Text Label 9800 5400 0    60   ~ 0
+Text Label 9150 3400 0    60   ~ 0
 P0.22
 Text Label 3850 4050 0    60   ~ 0
 P2.8
@@ -680,13 +746,13 @@ Text Label 3850 5350 0    60   ~ 0
 P0.18
 Text Label 7900 3550 0    60   ~ 0
 P0.22
-Text Label 10600 5300 0    60   ~ 0
+Text Label 9950 3300 0    60   ~ 0
 P0.11
-Text Label 9800 5300 0    60   ~ 0
+Text Label 9150 3300 0    60   ~ 0
 P0.10
-Text Label 10600 5200 0    60   ~ 0
+Text Label 9950 3200 0    60   ~ 0
 P0.1
-Text Label 9800 5200 0    60   ~ 0
+Text Label 9150 3200 0    60   ~ 0
 P0.0
 Text Label 7900 3450 0    60   ~ 0
 P0.11
@@ -696,25 +762,25 @@ Text Label 7900 2650 0    60   ~ 0
 P0.1
 Text Label 7900 2550 0    60   ~ 0
 P0.0
-Text Label 10600 5100 0    60   ~ 0
+Text Label 9950 3100 0    60   ~ 0
 P1.29
-Text Label 9800 5100 0    60   ~ 0
+Text Label 9150 3100 0    60   ~ 0
 P1.28
-Text Label 10600 5000 0    60   ~ 0
+Text Label 9950 3000 0    60   ~ 0
 P1.26
-Text Label 9800 5000 0    60   ~ 0
+Text Label 9150 3000 0    60   ~ 0
 P1.25
-Text Label 10600 4900 0    60   ~ 0
+Text Label 9950 2900 0    60   ~ 0
 P1.24
-Text Label 9800 4900 0    60   ~ 0
+Text Label 9150 2900 0    60   ~ 0
 P1.23
-Text Label 10600 4800 0    60   ~ 0
+Text Label 9950 2800 0    60   ~ 0
 P1.22
-Text Label 9800 4800 0    60   ~ 0
+Text Label 9150 2800 0    60   ~ 0
 P1.20
-Text Label 10600 4700 0    60   ~ 0
+Text Label 9950 2700 0    60   ~ 0
 P1.19
-Text Label 9800 4700 0    60   ~ 0
+Text Label 9150 2700 0    60   ~ 0
 P1.18
 Text Label 7900 4700 0    60   ~ 0
 P1.29
@@ -746,10 +812,10 @@ F 1 "10uf" V 8700 1520 25  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L GND #PWR07
+L GND #PWR010
 U 1 1 4D9FD592
 P 9050 1800
-F 0 "#PWR07" H 9050 1800 30  0001 C CNN
+F 0 "#PWR010" H 9050 1800 30  0001 C CNN
 F 1 "GND" H 9050 1730 30  0001 C CNN
 	1    9050 1800
 	1    0    0    -1  
@@ -782,39 +848,39 @@ F 1 "1117" H 9050 1450 40  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +3.3V #PWR08
+L +3.3V #PWR011
 U 1 1 4D9FCFA7
-P 3900 3300
-F 0 "#PWR08" H 3900 3260 30  0001 C CNN
-F 1 "+3.3V" H 3900 3410 30  0000 C CNN
-	1    3900 3300
+P 3950 3300
+F 0 "#PWR011" H 3950 3260 30  0001 C CNN
+F 1 "+3.3V" H 3950 3410 30  0000 C CNN
+	1    3950 3300
 	0    1    1    0   
 $EndComp
 $Comp
 L R_MINI R6
 U 1 1 4D9FCF9B
-P 3650 3300
-F 0 "R6" H 3580 3350 25  0000 C CNN
-F 1 "1K5" H 3720 3350 20  0000 C CNN
-	1    3650 3300
+P 3700 3300
+F 0 "R6" H 3630 3350 25  0000 C CNN
+F 1 "1K5" H 3770 3350 20  0000 C CNN
+	1    3700 3300
 	-1   0    0    1   
 $EndComp
 $Comp
 L R_MINI R4
 U 1 1 4D9FCC88
-P 3650 3500
-F 0 "R4" H 3580 3550 25  0000 C CNN
-F 1 "33R" H 3720 3550 20  0000 C CNN
-	1    3650 3500
+P 3700 3500
+F 0 "R4" H 3630 3550 25  0000 C CNN
+F 1 "33R" H 3770 3550 20  0000 C CNN
+	1    3700 3500
 	-1   0    0    1   
 $EndComp
 $Comp
 L R_MINI R5
 U 1 1 4D9FCC84
-P 3650 3400
-F 0 "R5" H 3580 3450 25  0000 C CNN
-F 1 "33R" H 3720 3450 20  0000 C CNN
-	1    3650 3400
+P 3700 3400
+F 0 "R5" H 3630 3450 25  0000 C CNN
+F 1 "33R" H 3770 3450 20  0000 C CNN
+	1    3700 3400
 	-1   0    0    1   
 $EndComp
 $Comp
@@ -836,37 +902,37 @@ F 1 "10K" H 3720 3700 20  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L GND #PWR09
+L GND #PWR012
 U 1 1 4D9FCBEB
 P 3400 3800
-F 0 "#PWR09" H 3400 3800 30  0001 C CNN
+F 0 "#PWR012" H 3400 3800 30  0001 C CNN
 F 1 "GND" H 3400 3730 30  0001 C CNN
 	1    3400 3800
 	0    1    1    0   
 $EndComp
 $Comp
-L VBUS #PWR010
+L VBUS #PWR013
 U 1 1 4D9FCBD5
 P 3450 3650
-F 0 "#PWR010" H 3450 3750 30  0001 C CNN
+F 0 "#PWR013" H 3450 3750 30  0001 C CNN
 F 1 "VBUS" H 3450 3750 30  0000 C CNN
 	1    3450 3650
 	0    -1   -1   0   
 $EndComp
 $Comp
-L VBUS #PWR011
+L VBUS #PWR014
 U 1 1 4D9FCBD0
 P 1050 3800
-F 0 "#PWR011" H 1050 3900 30  0001 C CNN
+F 0 "#PWR014" H 1050 3900 30  0001 C CNN
 F 1 "VBUS" H 1050 3900 30  0000 C CNN
 	1    1050 3800
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR012
+L GND #PWR015
 U 1 1 4D9FCBA6
 P 750 3500
-F 0 "#PWR012" H 750 3500 30  0001 C CNN
+F 0 "#PWR015" H 750 3500 30  0001 C CNN
 F 1 "GND" H 750 3430 30  0001 C CNN
 	1    750  3500
 	0    1    1    0   
@@ -881,37 +947,37 @@ F 1 "USB" V 1000 3300 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR013
+L GND #PWR016
 U 1 1 4D9FC66B
 P 4250 6350
-F 0 "#PWR013" H 4250 6350 30  0001 C CNN
+F 0 "#PWR016" H 4250 6350 30  0001 C CNN
 F 1 "GND" H 4250 6280 30  0001 C CNN
 	1    4250 6350
 	1    0    0    -1  
 $EndComp
 $Comp
-L +3.3V #PWR014
+L +3.3V #PWR017
 U 1 1 4D9FC667
 P 4050 6150
-F 0 "#PWR014" H 4050 6110 30  0001 C CNN
+F 0 "#PWR017" H 4050 6110 30  0001 C CNN
 F 1 "+3.3V" H 4050 6260 30  0000 C CNN
 	1    4050 6150
 	1    0    0    -1  
 $EndComp
 $Comp
-L +3.3V #PWR015
+L +3.3V #PWR018
 U 1 1 4D9FC639
 P 1600 4450
-F 0 "#PWR015" H 1600 4410 30  0001 C CNN
+F 0 "#PWR018" H 1600 4410 30  0001 C CNN
 F 1 "+3.3V" H 1600 4560 30  0000 C CNN
 	1    1600 4450
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR016
+L GND #PWR019
 U 1 1 4D9FC633
 P 2700 5000
-F 0 "#PWR016" H 2700 5000 30  0001 C CNN
+F 0 "#PWR019" H 2700 5000 30  0001 C CNN
 F 1 "GND" H 2700 4930 30  0001 C CNN
 	1    2700 5000
 	1    0    0    -1  
@@ -926,19 +992,19 @@ F 1 "25Mhz" H 3900 2350 25  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR017
+L GND #PWR020
 U 1 1 4D9FBFA4
 P 5600 6900
-F 0 "#PWR017" H 5600 6900 30  0001 C CNN
+F 0 "#PWR020" H 5600 6900 30  0001 C CNN
 F 1 "GND" H 5600 6830 30  0001 C CNN
 	1    5600 6900
 	1    0    0    -1  
 $EndComp
 $Comp
-L +3.3V #PWR018
+L +3.3V #PWR021
 U 1 1 4D9FBF87
 P 2600 2800
-F 0 "#PWR018" H 2600 2760 30  0001 C CNN
+F 0 "#PWR021" H 2600 2760 30  0001 C CNN
 F 1 "+3.3V" H 2600 2910 30  0000 C CNN
 	1    2600 2800
 	1    0    0    -1  
@@ -953,10 +1019,10 @@ F 1 "SWITCH_PUSHBUTTON" H 2050 3025 25  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR019
+L GND #PWR022
 U 1 1 4D9FBF37
 P 1800 3100
-F 0 "#PWR019" H 1800 3100 30  0001 C CNN
+F 0 "#PWR022" H 1800 3100 30  0001 C CNN
 F 1 "GND" H 1800 3030 30  0001 C CNN
 	1    1800 3100
 	0    1    1    0   
@@ -980,10 +1046,10 @@ F 1 "10K" H 2670 3000 20  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L GND #PWR020
+L GND #PWR023
 U 1 1 4D9FBEF0
 P 3500 1800
-F 0 "#PWR020" H 3500 1800 30  0001 C CNN
+F 0 "#PWR023" H 3500 1800 30  0001 C CNN
 F 1 "GND" H 3500 1730 30  0001 C CNN
 	1    3500 1800
 	1    0    0    -1  
@@ -1034,10 +1100,10 @@ F 1 "32.768kHz" H 3100 2350 25  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR021
+L GND #PWR024
 U 1 1 4D9FBBA7
 P 6900 2050
-F 0 "#PWR021" H 6900 2050 30  0001 C CNN
+F 0 "#PWR024" H 6900 2050 30  0001 C CNN
 F 1 "GND" H 6900 1980 30  0001 C CNN
 	1    6900 2050
 	1    0    0    -1  
@@ -1070,19 +1136,19 @@ F 1 "0.1uf" V 6600 1620 25  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L +3.3V #PWR022
+L +3.3V #PWR025
 U 1 1 4D9FBB67
 P 5600 1300
-F 0 "#PWR022" H 5600 1260 30  0001 C CNN
+F 0 "#PWR025" H 5600 1260 30  0001 C CNN
 F 1 "+3.3V" H 5600 1410 30  0000 C CNN
 	1    5600 1300
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR023
+L GND #PWR026
 U 1 1 4D9FBB51
 P 5050 1750
-F 0 "#PWR023" H 5050 1750 30  0001 C CNN
+F 0 "#PWR026" H 5050 1750 30  0001 C CNN
 F 1 "GND" H 5050 1680 30  0001 C CNN
 	1    5050 1750
 	1    0    0    -1  

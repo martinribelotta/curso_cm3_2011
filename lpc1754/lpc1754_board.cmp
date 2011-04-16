@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by CvPCB (2011-03-30 BZR 2932)-stable date = 12/04/2011 10:21:27 p.m.
+Cmp-Mod V01 Created by CvPCB (2011-03-30)-stable date = sáb 16 abr 2011 12:20:46 ART
 
 BeginCmp
 TimeStamp = /4D9FBF16;
@@ -134,6 +134,13 @@ IdModule  = PIN_ARRAY_2X1;
 EndCmp
 
 BeginCmp
+TimeStamp = /4DA9B21C;
+Reference = J_HOST1;
+ValeurCmp = USB_2;
+IdModule  = USB_A;
+EndCmp
+
+BeginCmp
 TimeStamp = /4DA084A3;
 Reference = J_PWR1;
 ValeurCmp = DC_POWER_JACK;
@@ -207,6 +214,20 @@ BeginCmp
 TimeStamp = /4DA083A3;
 Reference = R8;
 ValeurCmp = 1K;
+IdModule  = SM0805_Opendous;
+EndCmp
+
+BeginCmp
+TimeStamp = /4DA9B248;
+Reference = R9;
+ValeurCmp = 33R;
+IdModule  = SM0805_Opendous;
+EndCmp
+
+BeginCmp
+TimeStamp = /4DA9B24C;
+Reference = R10;
+ValeurCmp = 33R;
 IdModule  = SM0805_Opendous;
 EndCmp
 
