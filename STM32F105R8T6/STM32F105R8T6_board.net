@@ -1,10 +1,22 @@
-# EESchema Netlist Version 1.1 created  19/04/2011 01:14:38 a.m.
+# EESchema Netlist Version 1.1 created  mié 27 abr 2011 00:27:43 ART
 (
+ ( /4DB7750B $noname  R4 R {Lib=R}
+  (    1 +3.3V )
+  (    2 /OTG_FS_DP )
+ )
+ ( /4DB773D1 $noname  JP2 PWR_USB {Lib=JUMPER}
+  (    1 /PWR )
+  (    2 /PWR_USB )
+ )
+ ( /4DB773CD $noname  JP3 PWR_SELF {Lib=JUMPER}
+  (    1 /PWR )
+  (    2 /PWR_SELF )
+ )
  ( /4DACE6C9 $noname  PIO2 CONN_10X2 {Lib=CONN_10X2}
   (    1 GND )
-  (    2 /PC13 )
+  (    2 /NRST )
   (    3 /PB9 )
-  (    4 /NRST )
+  (    4 /PC13 )
   (    5 /PB7 )
   (    6 /PB8 )
   (    7 /PB5 )
@@ -13,14 +25,14 @@
   (   10 /PD2 )
   (   11 /PC10 )
   (   12 /PC11 )
-  (   13 /PB13 )
-  (   14 /PB12 )
-  (   15 /PB15 )
-  (   16 /PB14 )
-  (   17 /PC7 )
-  (   18 /PC6 )
-  (   19 /PC9 )
-  (   20 /PC8 )
+  (   13 /PC8 )
+  (   14 /PC9 )
+  (   15 /PC6 )
+  (   16 /PC7 )
+  (   17 /PB14 )
+  (   18 /PB15 )
+  (   19 /PB12 )
+  (   20 /PB13 )
  )
  ( /4DACE6C6 $noname  PIO1 CONN_10X2 {Lib=CONN_10X2}
   (    1 /PC0 )
@@ -44,42 +56,30 @@
   (   19 /PB11 )
   (   20 +3.3V )
  )
- ( /4DACDE5B $noname  R4 R {Lib=R}
-  (    1 GND )
-  (    2 /OTG_FS_ID )
- )
  ( /4DACDCB9 $noname  USB_HOST1 USB_2 {Lib=USB_2}
-  (    1 N-000001 )
-  (    2 N-000061 )
+  (    1 /PWR_USB )
+  (    2 N-000059 )
   (    3 N-000009 )
   (    4 GND )
  )
  ( /4DACDCAC $noname  USB_DEV1 USB_1 {Lib=USB_1}
-  (    1 N-000001 )
-  (    2 N-000061 )
+  (    1 /PWR_USB )
+  (    2 N-000059 )
   (    3 N-000009 )
   (    4 GND )
   (    5 ? )
   (    6 ? )
  )
- ( /4DACDC78 $noname  R8 R {Lib=R}
-  (    1 /OTG_FS_SOF )
-  (    2 GND )
- )
  ( /4DACDC73 $noname  R7 R {Lib=R}
   (    1 /OTG_FS_VBUS )
   (    2 GND )
  )
- ( /4DACDC71 $noname  R6 R {Lib=R}
-  (    1 N-000001 )
-  (    2 /OTG_FS_SOF )
- )
  ( /4DACDC6E $noname  R5 R {Lib=R}
-  (    1 N-000001 )
+  (    1 /PWR_USB )
   (    2 /OTG_FS_VBUS )
  )
  ( /4DACDC53 $noname  R3 R {Lib=R}
-  (    1 N-000061 )
+  (    1 N-000059 )
   (    2 /OTG_FS_DM )
  )
  ( /4DACDC4D $noname  R2 R {Lib=R}
@@ -97,13 +97,13 @@
   (    8 GND )
  )
  ( /4DA22DF3 $noname  J2 DC_POWER_JACK {Lib=DC_POWER_JACK}
-  (    1 GND )
+  (    1 /PWR_SELF )
   (    2 GND )
-  (    3 N-000059 )
+  (    3 GND )
  )
  ( /4DA22DCE $noname  C_POW1 CP_MINI {Lib=CP_MINI}
   (    1 GND )
-  (    2 N-000059 )
+  (    2 /PWR )
  )
  ( /4DA22DAF $noname  C_POW3 CP_MINI {Lib=CP_MINI}
   (    1 GND )
@@ -116,16 +116,16 @@
  ( /4DA22D7B $noname  U2 1117 {Lib=1117}
   (    1 GND )
   (    2 +3.3V )
-  (    3 N-000059 )
+  (    3 /PWR )
   (    4 +3.3V )
  )
  ( /4DA2298C $noname  U1 STM32F105R8T6 {Lib=STM32F105R8T6}
   (    1 +3.3V )
   (    2 /PC13 )
-  (    3 N-000034 )
-  (    4 N-000033 )
-  (    5 N-000035 )
-  (    6 N-000036 )
+  (    3 N-000041 )
+  (    4 N-000042 )
+  (    5 N-000043 )
+  (    6 N-000050 )
   (    7 /NRST )
   (    8 /PC0 )
   (    9 /PC1 )
@@ -160,9 +160,9 @@
   (   38 /PC7 )
   (   39 /PC8 )
   (   40 /PC9 )
-  (   41 /OTG_FS_SOF )
+  (   41 ? )
   (   42 /OTG_FS_VBUS )
-  (   43 /OTG_FS_ID )
+  (   43 ? )
   (   44 /OTG_FS_DM )
   (   45 /OTG_FS_DP )
   (   46 /JTMS/SWDIO )
@@ -179,43 +179,43 @@
   (   57 /PB5 )
   (   58 /PB6 )
   (   59 /PB7 )
-  (   60 N-000039 )
+  (   60 N-000046 )
   (   61 /PB8 )
   (   62 /PB9 )
   (   63 GND )
   (   64 +3.3V )
  )
  ( /4DA20079 $noname  JP1 JUMPER {Lib=JUMPER}
-  (    1 N-000039 )
+  (    1 N-000046 )
   (    2 GND )
  )
  ( /4DA2002C $noname  R1 R {Lib=R}
-  (    1 N-000039 )
+  (    1 N-000046 )
   (    2 +3.3V )
  )
  ( /4DA1F7E5 $noname  C2 C {Lib=C}
   (    1 GND )
-  (    2 N-000035 )
+  (    2 N-000043 )
  )
  ( /4DA1F7E3 $noname  C4 C {Lib=C}
   (    1 GND )
-  (    2 N-000036 )
+  (    2 N-000050 )
  )
  ( /4DA1F7E0 $noname  C3 C {Lib=C}
-  (    1 N-000034 )
+  (    1 N-000041 )
   (    2 GND )
  )
  ( /4DA1F7D4 $noname  C1 C {Lib=C}
-  (    1 N-000033 )
+  (    1 N-000042 )
   (    2 GND )
  )
  ( /4DA1F7CD $noname  X1 CRYSTAL {Lib=CRYSTAL}
-  (    1 N-000033 )
-  (    2 N-000034 )
+  (    1 N-000041 )
+  (    2 N-000042 )
  )
  ( /4DA1F7C5 $noname  X2 CRYSTAL {Lib=CRYSTAL}
-  (    1 N-000035 )
-  (    2 N-000036 )
+  (    1 N-000043 )
+  (    2 N-000050 )
  )
  ( /4DA13FF5 $noname  C5 C {Lib=C}
   (    1 /NRST )
@@ -256,50 +256,26 @@ $component R4
  R?
  SM0603
  SM0805
- R?-*
- SM1206
-$endlist
-$component R8
- R?
- SM0603
- SM0805
- R?-*
- SM1206
 $endlist
 $component R7
  R?
  SM0603
  SM0805
- R?-*
- SM1206
-$endlist
-$component R6
- R?
- SM0603
- SM0805
- R?-*
- SM1206
 $endlist
 $component R5
  R?
  SM0603
  SM0805
- R?-*
- SM1206
 $endlist
 $component R3
  R?
  SM0603
  SM0805
- R?-*
- SM1206
 $endlist
 $component R2
  R?
  SM0603
  SM0805
- R?-*
- SM1206
 $endlist
 $component C_POW2
  SM*
@@ -310,8 +286,6 @@ $component R1
  R?
  SM0603
  SM0805
- R?-*
- SM1206
 $endlist
 $component C2
  SM*
@@ -371,24 +345,17 @@ $endlist
 $endfootprintlist
 }
 { Pin List by Nets
-Net 1 "" ""
- USB_HOST1 1
- R5 1
- R6 1
- USB_DEV1 1
-Net 4 "/OTG_FS_VBUS" "OTG_FS_VBUS"
- U1 42
- R5 2
- R7 1
-Net 5 "GND" "GND"
- U1 12
- C_POW3 1
+Net 1 "GND" "GND"
  U1 31
+ U1 12
+ C_POW1 1
+ C_POW3 1
  C_POW2 2
  U2 1
  U1 47
  U1 18
  U1 63
+ PIO2 1
  C2 1
  C4 1
  C3 2
@@ -402,212 +369,216 @@ Net 5 "GND" "GND"
  C7 2
  C5 2
  SW1 1
- PIO2 1
- C_POW1 1
- J2 2
- J2 1
- JTAG1 8
- JTAG1 2
- R4 1
- R7 2
- R8 2
- USB_DEV1 4
  USB_HOST1 4
+ USB_DEV1 4
+ J2 2
+ JTAG1 2
+ J2 3
+ R7 2
+ JTAG1 8
+Net 2 "/PWR_USB" "PWR_USB"
+ USB_DEV1 1
+ USB_HOST1 1
+ JP2 2
+ R5 1
+Net 5 "/OTG_FS_VBUS" "OTG_FS_VBUS"
+ U1 42
+ R7 1
+ R5 2
 Net 6 "+3.3V" "+3.3V"
+ C8 1
+ C7 1
  PIO1 20
+ U1 13
+ JTAG1 1
  U1 1
  U2 4
  U2 2
+ C_POW2 1
+ C_POW3 2
  U1 48
  U1 32
- C_POW2 1
- U1 13
- C_POW3 2
- JTAG1 1
  U1 64
  U1 19
  R1 2
- C7 1
- C8 1
+ R4 1
  C11 2
  C10 2
  C6 1
  C9 1
 Net 7 "/JTCK/SWCLK" "JTCK/SWCLK"
- JTAG1 3
  U1 49
+ JTAG1 3
 Net 8 "/NJTRST" "NJTRST"
  U1 56
  JTAG1 7
 Net 9 "" ""
- USB_HOST1 3
  R2 1
+ USB_HOST1 3
  USB_DEV1 3
-Net 10 "/OTG_FS_DP" "OTG_FS_DP"
- R2 2
- U1 45
-Net 11 "/OTG_FS_DM" "OTG_FS_DM"
+Net 10 "/OTG_FS_DM" "OTG_FS_DM"
  R3 2
  U1 44
-Net 12 "/OTG_FS_ID" "OTG_FS_ID"
- U1 43
- R4 2
-Net 13 "/JTMS/SWDIO" "JTMS/SWDIO"
- JTAG1 6
+Net 11 "/JTMS/SWDIO" "JTMS/SWDIO"
  U1 46
-Net 14 "/JTDO/TRACESWO" "JTDO/TRACESWO"
+ JTAG1 6
+Net 12 "/JTDO/TRACESWO" "JTDO/TRACESWO"
  U1 55
  JTAG1 4
-Net 15 "/JTDI" "JTDI"
+Net 13 "/JTDI" "JTDI"
  JTAG1 5
  U1 50
-Net 16 "/PB13" "PB13"
- PIO2 13
- U1 34
-Net 17 "/PB12" "PB12"
- U1 33
- PIO2 14
-Net 18 "/PB14" "PB14"
- U1 35
- PIO2 16
-Net 19 "/PC0" "PC0"
- PIO1 1
- U1 8
-Net 20 "/PC1" "PC1"
- U1 9
- PIO1 2
-Net 21 "/PC2" "PC2"
- PIO1 3
- U1 10
-Net 22 "/PC3" "PC3"
+Net 14 "/PB10" "PB10"
+ PIO1 18
+ U1 29
+Net 15 "/PB11" "PB11"
+ PIO1 19
+ U1 30
+Net 16 "/PC3" "PC3"
  U1 11
  PIO1 4
-Net 23 "/PC13" "PC13"
- U1 2
- PIO2 2
-Net 24 "/PB9" "PB9"
- PIO2 3
- U1 62
-Net 25 "/PB7" "PB7"
- PIO2 5
- U1 59
-Net 26 "/PB8" "PB8"
- PIO2 6
- U1 61
-Net 27 "/PB5" "PB5"
- PIO2 7
- U1 57
-Net 28 "/PB6" "PB6"
- U1 58
- PIO2 8
-Net 29 "/PC12" "PC12"
- U1 53
- PIO2 9
-Net 30 "/PD2" "PD2"
- U1 54
- PIO2 10
-Net 31 "/PC10" "PC10"
- U1 51
- PIO2 11
-Net 32 "/PC11" "PC11"
- U1 52
- PIO2 12
-Net 33 "" ""
- U1 4
- X1 1
- C1 1
-Net 34 "" ""
- C3 1
- X1 2
- U1 3
-Net 35 "" ""
- X2 1
- C2 2
- U1 5
-Net 36 "" ""
- X2 2
- C4 2
- U1 6
-Net 37 "/PB10" "PB10"
- U1 29
- PIO1 18
-Net 38 "/PC8" "PC8"
- PIO2 20
- U1 39
-Net 39 "" ""
- JP1 1
- R1 1
- U1 60
-Net 40 "/NRST" "NRST"
- PIO2 4
- C5 1
- U1 7
- SW1 2
-Net 41 "/PA4" "PA4"
- PIO1 9
- U1 20
-Net 42 "/PB11" "PB11"
- U1 30
- PIO1 19
-Net 43 "/PC9" "PC9"
- U1 40
- PIO2 19
-Net 44 "/PA5" "PA5"
- PIO1 10
- U1 21
-Net 45 "/PA6" "PA6"
- PIO1 11
- U1 22
-Net 46 "/PA2" "PA2"
- PIO1 7
- U1 16
-Net 47 "/PB0" "PB0"
- U1 26
- PIO1 15
-Net 48 "/PB15" "PB15"
- PIO2 15
- U1 36
-Net 49 "/PA3" "PA3"
- U1 17
- PIO1 8
-Net 50 "/PB1" "PB1"
- PIO1 16
- U1 27
-Net 51 "/PC6" "PC6"
- PIO2 18
- U1 37
-Net 52 "/PB2" "PB2"
- PIO1 17
- U1 28
-Net 53 "/PC7" "PC7"
- U1 38
- PIO2 17
-Net 54 "/PA7" "PA7"
- PIO1 12
- U1 23
-Net 55 "/PA0" "PA0"
+Net 17 "/PA0" "PA0"
  PIO1 5
  U1 14
-Net 56 "/PC4" "PC4"
- PIO1 13
- U1 24
-Net 57 "/PA1" "PA1"
- PIO1 6
+Net 18 "/PA1" "PA1"
  U1 15
-Net 58 "/PC5" "PC5"
- PIO1 14
- U1 25
-Net 59 "" ""
- U2 3
+ PIO1 6
+Net 19 "/PA2" "PA2"
+ U1 16
+ PIO1 7
+Net 20 "/PA3" "PA3"
+ U1 17
+ PIO1 8
+Net 21 "/PA4" "PA4"
+ PIO1 9
+ U1 20
+Net 22 "/PA5" "PA5"
+ PIO1 10
+ U1 21
+Net 23 "/PA6" "PA6"
+ U1 22
+ PIO1 11
+Net 24 "/PB5" "PB5"
+ PIO2 7
+ U1 57
+Net 25 "/PB6" "PB6"
+ PIO2 8
+ U1 58
+Net 26 "/PC12" "PC12"
+ PIO2 9
+ U1 53
+Net 27 "/PD2" "PD2"
+ PIO2 10
+ U1 54
+Net 28 "/PB13" "PB13"
+ U1 34
+ PIO2 20
+Net 29 "/PC10" "PC10"
+ PIO2 11
+ U1 51
+Net 30 "/PC11" "PC11"
+ PIO2 12
+ U1 52
+Net 31 "/PC6" "PC6"
+ PIO2 15
+ U1 37
+Net 32 "/PC7" "PC7"
+ PIO2 16
+ U1 38
+Net 33 "/PB14" "PB14"
+ PIO2 17
+ U1 35
+Net 34 "/PB15" "PB15"
+ PIO2 18
+ U1 36
+Net 35 "/PB12" "PB12"
+ PIO2 19
+ U1 33
+Net 36 "/PC0" "PC0"
+ U1 8
+ PIO1 1
+Net 37 "/PC1" "PC1"
+ U1 9
+ PIO1 2
+Net 38 "/PC2" "PC2"
+ U1 10
+ PIO1 3
+Net 39 "/NRST" "NRST"
+ U1 7
+ PIO2 2
+ SW1 2
+ C5 1
+Net 40 "/PC13" "PC13"
+ PIO2 4
+ U1 2
+Net 41 "" ""
+ C3 1
+ X1 1
+ U1 3
+Net 42 "" ""
+ U1 4
+ X1 2
+ C1 1
+Net 43 "" ""
+ U1 5
+ C2 2
+ X2 1
+Net 44 "/PC8" "PC8"
+ U1 39
+ PIO2 13
+Net 45 "/PB7" "PB7"
+ PIO2 5
+ U1 59
+Net 46 "" ""
+ R1 1
+ JP1 1
+ U1 60
+Net 47 "/PC9" "PC9"
+ PIO2 14
+ U1 40
+Net 48 "/PB8" "PB8"
+ PIO2 6
+ U1 61
+Net 49 "/PWR" "PWR"
  C_POW1 2
- J2 3
-Net 60 "/OTG_FS_SOF" "OTG_FS_SOF"
- U1 41
- R8 1
- R6 2
-Net 61 "" ""
- USB_HOST1 2
+ U2 3
+ JP2 1
+ JP3 1
+Net 50 "" ""
+ C4 2
+ U1 6
+ X2 2
+Net 51 "/PB0" "PB0"
+ PIO1 15
+ U1 26
+Net 52 "/PB1" "PB1"
+ PIO1 16
+ U1 27
+Net 53 "/PB2" "PB2"
+ U1 28
+ PIO1 17
+Net 54 "/PB9" "PB9"
+ PIO2 3
+ U1 62
+Net 55 "/PA7" "PA7"
+ U1 23
+ PIO1 12
+Net 56 "/PC4" "PC4"
+ U1 24
+ PIO1 13
+Net 57 "/PC5" "PC5"
+ U1 25
+ PIO1 14
+Net 58 "/OTG_FS_DP" "OTG_FS_DP"
+ R2 2
+ R4 2
+ U1 45
+Net 59 "" ""
  R3 1
  USB_DEV1 2
+ USB_HOST1 2
+Net 60 "/PWR_SELF" "PWR_SELF"
+ JP3 2
+ J2 1
 }
 #End
