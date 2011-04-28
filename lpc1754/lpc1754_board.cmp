@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by CvPCB (2011-03-30)-stable date = sáb 16 abr 2011 12:20:46 ART
+Cmp-Mod V01 Created by CvPCB (2011-03-30 BZR 2932)-stable date = 28/04/2011 12:39:41 p.m.
 
 BeginCmp
 TimeStamp = /4D9FBF16;
@@ -148,6 +148,20 @@ IdModule  = JACK_ALIM;
 EndCmp
 
 BeginCmp
+TimeStamp = /4DB989BC;
+Reference = LED1;
+ValeurCmp = LED;
+IdModule  = LEDV;
+EndCmp
+
+BeginCmp
+TimeStamp = /4DB98A0B;
+Reference = LED2;
+ValeurCmp = LED;
+IdModule  = LEDV;
+EndCmp
+
+BeginCmp
 TimeStamp = /4DA4F950;
 Reference = P1;
 ValeurCmp = CONN_4X2;
@@ -218,16 +232,16 @@ IdModule  = SM0805_Opendous;
 EndCmp
 
 BeginCmp
-TimeStamp = /4DA9B248;
+TimeStamp = /4DB989D1;
 Reference = R9;
-ValeurCmp = 33R;
+ValeurCmp = 10K;
 IdModule  = SM0805_Opendous;
 EndCmp
 
 BeginCmp
-TimeStamp = /4DA9B24C;
+TimeStamp = /4DB98A0A;
 Reference = R10;
-ValeurCmp = 33R;
+ValeurCmp = 10K;
 IdModule  = SM0805_Opendous;
 EndCmp
 
