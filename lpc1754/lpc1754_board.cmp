@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by CvPCB (2011-03-30 BZR 2932)-stable date = 28/04/2011 12:39:41 p.m.
+Cmp-Mod V01 Created by CvPCB (2011-03-30 BZR 2932)-stable date = 30/04/2011 01:44:29 a.m.
 
 BeginCmp
 TimeStamp = /4D9FBF16;
@@ -113,31 +113,38 @@ IdModule  = LQFP80_0.5mm_SOT315_Opendous;
 EndCmp
 
 BeginCmp
-TimeStamp = /4D9FCB81;
-Reference = J1;
-ValeurCmp = USB;
-IdModule  = USB_B;
-EndCmp
-
-BeginCmp
-TimeStamp = /4DA0FD3F;
-Reference = JP2;
-ValeurCmp = JUMPER-3;
-IdModule  = PIN_ARRAY_3X1;
-EndCmp
-
-BeginCmp
 TimeStamp = /4DA08348;
-Reference = JPRG1;
-ValeurCmp = JUMPER-2;
+Reference = J1;
+ValeurCmp = ISP;
+IdModule  = PIN_ARRAY_2X1;
+EndCmp
+
+BeginCmp
+TimeStamp = /4DBB9257;
+Reference = J2;
+ValeurCmp = PWR_SELF;
+IdModule  = PIN_ARRAY_2X1;
+EndCmp
+
+BeginCmp
+TimeStamp = /4DBB9275;
+Reference = J3;
+ValeurCmp = PWR_USB;
 IdModule  = PIN_ARRAY_2X1;
 EndCmp
 
 BeginCmp
 TimeStamp = /4DA9B21C;
-Reference = J_HOST1;
-ValeurCmp = USB_2;
+Reference = J4;
+ValeurCmp = USB_HOST;
 IdModule  = USB_A;
+EndCmp
+
+BeginCmp
+TimeStamp = /4D9FCB81;
+Reference = J5;
+ValeurCmp = USB_DEV;
+IdModule  = USB_B;
 EndCmp
 
 BeginCmp
@@ -270,7 +277,7 @@ BeginCmp
 TimeStamp = /4D9FC2AC;
 Reference = X2;
 ValeurCmp = 25Mhz;
-IdModule  = HC49-US_Minimized;
+IdModule  = HC-49V;
 EndCmp
 
 EndListe

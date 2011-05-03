@@ -1,307 +1,310 @@
-# EESchema Netlist Version 1.1 created  28/04/2011 12:39:41 p.m.
+# EESchema Netlist Version 1.1 created  30/04/2011 02:17:33 a.m.
 (
- ( /4D9FBF16 SM0805_Opendous C1 0.1uF
-  ( 1 /RESET )
-  ( 2 GND )
+ ( /4DBB9275 $noname  J3 PWR_USB {Lib=JUMPER-2}
+  (    1 /PWR )
+  (    2 VBUS )
  )
- ( /4D9FBEB8 SM0805_Opendous C2 18pf
-  ( 1 GND )
-  ( 2 N-000064 )
+ ( /4DBB9257 $noname  J2 PWR_SELF {Lib=JUMPER-2}
+  (    1 /PWR )
+  (    2 /PWR_SELF )
  )
- ( /4D9FBEBE SM0805_Opendous C3 18pf
-  ( 1 GND )
-  ( 2 N-000065 )
+ ( /4DB98A0B $noname  LED2 LED {Lib=LED}
+  (    1 N-000066 )
+  (    2 GND )
  )
- ( /4D9FBEC2 SM0805_Opendous C4 18pf
-  ( 1 GND )
-  ( 2 N-000057 )
+ ( /4DB98A0A $noname  R10 10K {Lib=R_MINI}
+  (    1 +3.3V )
+  (    2 N-000066 )
  )
- ( /4D9FBEC5 SM0805_Opendous C5 18pf
-  ( 1 GND )
-  ( 2 N-000058 )
+ ( /4DB989D1 $noname  R9 10K {Lib=R_MINI}
+  (    1 +3.3V )
+  (    2 N-000068 )
  )
- ( /4D9FBB25 SM0805_Opendous C6 0.1uf
-  ( 1 GND )
-  ( 2 +3.3V )
+ ( /4DB989BC $noname  LED1 LED {Lib=LED}
+  (    1 N-000068 )
+  (    2 /P1.18 )
  )
- ( /4D9FBB1B SM0805_Opendous C7 0.1uf
-  ( 1 GND )
-  ( 2 +3.3V )
+ ( /4DA9B21C $noname  J4 USB_HOST {Lib=USB_2}
+  (    1 VBUS )
+  (    2 N-000074 )
+  (    3 N-000064 )
+  (    4 GND )
  )
- ( /4D9FBB17 SM0805_Opendous C8 0.1uf
-  ( 1 GND )
-  ( 2 +3.3V )
+ ( /4DA4F950 $noname  P1 CONN_4X2 {Lib=CONN_4X2}
+  (    1 +3.3V )
+  (    2 GND )
+  (    3 /TCK )
+  (    4 /TDO )
+  (    5 /TDI )
+  (    6 /TMS )
+  (    7 /TRST )
+  (    8 GND )
  )
- ( /4D9FB60F SM0805_Opendous C9 0.1uf
-  ( 1 GND )
-  ( 2 +3.3V )
+ ( /4DA084A3 $noname  J_PWR1 DC_POWER_JACK {Lib=DC_POWER_JACK}
+  (    1 /PWR_SELF )
+  (    2 GND )
+  (    3 GND )
  )
- ( /4D9FBB78 SM0805_Opendous C10 0.1uf
-  ( 1 GND )
-  ( 2 +3.3V )
+ ( /4DA083A3 $noname  R8 1K {Lib=R_MINI}
+  (    1 +3.3V )
+  (    2 GND )
  )
- ( /4D9FBB86 SM0805_Opendous C11 0.1uf
-  ( 1 GND )
-  ( 2 +3.3V )
+ ( /4DA08348 $noname  J1 ISP {Lib=JUMPER-2}
+  (    1 GND )
+  (    2 N-000067 )
  )
- ( /4D9FBB89 SM0805_Opendous C12 0.1uf
-  ( 1 GND )
-  ( 2 +3.3V )
+ ( /4DA082F4 $noname  R7 10K {Lib=R_MINI}
+  (    1 N-000067 )
+  (    2 +3.3V )
  )
- ( /4D9FD554 SM0805_Opendous C331 0.1uf
-  ( 1 +3.3V )
-  ( 2 GND )
+ ( /4DA07745 $noname  P_IO1 CONN_25X2 {Lib=CONN_25X2}
+  (    1 GND )
+  (    2 +3.3V )
+  (    3 /P1.18 )
+  (    4 /P1.19 )
+  (    5 /P1.20 )
+  (    6 /P1.22 )
+  (    7 /P1.23 )
+  (    8 /P1.24 )
+  (    9 /P1.25 )
+  (   10 /P1.26 )
+  (   11 /P1.28 )
+  (   12 /P1.29 )
+  (   13 /P0.0 )
+  (   14 /P0.1 )
+  (   15 /P0.10 )
+  (   16 /P0.11 )
+  (   17 /P0.22 )
+  (   18 /P0.18 )
+  (   19 /P0.17 )
+  (   20 /P0.15 )
+  (   21 /P0.16 )
+  (   22 /P2.9 )
+  (   23 /P2.8 )
+  (   24 /P2.7 )
+  (   25 /P2.6 )
+  (   26 /P2.5 )
+  (   27 /P2.4 )
+  (   28 /P2.3 )
+  (   29 /P2.2 )
+  (   30 /P2.1 )
+  (   31 /P2.0 )
+  (   32 /P0.9 )
+  (   33 /P0.8 )
+  (   34 /P0.7 )
+  (   35 /P0.6 )
+  (   36 /P4.28 )
+  (   37 /P4.29 )
+  (   38 /P1.15 )
+  (   39 /P1.14 )
+  (   40 /P1.10 )
+  (   41 /P1.9 )
+  (   42 /P1.8 )
+  (   43 /P1.4 )
+  (   44 /P1.1 )
+  (   45 /P1.0 )
+  (   46 /P0.2 )
+  (   47 /P0.3 )
+  (   48 /RESET )
+  (   49 +3.3V )
+  (   50 GND )
  )
- ( /4D9FD574 SM0805_Opendous C332 10uf
-  ( 1 +3.3V )
-  ( 2 GND )
+ ( /4D9FD59A $noname  C_VIN1 10uf {Lib=CP_TANTALUM_MINI}
+  (    1 /PWR )
+  (    2 GND )
  )
- ( /4D9FD59A SM0805_Opendous C_VIN1 10uf
-  ( 1 N-000066 )
-  ( 2 GND )
+ ( /4D9FD574 $noname  C332 10uf {Lib=CP_TANTALUM_MINI}
+  (    1 +3.3V )
+  (    2 GND )
  )
- ( /4D9FB5F8 LQFP80_0.5mm_SOT315_Opendous IC1 LPC175X
-  ( 1 /TDO )
-  ( 2 /TDI )
-  ( 3 /TMS )
-  ( 4 /TRST )
-  ( 5 /TCK )
-  ( 6 ? )
-  ( 7 ? )
-  ( 8 +3.3V )
-  ( 9 GND )
-  ( 10 +3.3V )
-  ( 11 ? )
-  ( 12 GND )
-  ( 13 N-000065 )
-  ( 14 /RESET )
-  ( 15 N-000064 )
-  ( 16 +3.3V )
-  ( 17 ? )
-  ( 18 N-000069 )
-  ( 19 N-000058 )
-  ( 20 N-000057 )
-  ( 21 +3.3V )
-  ( 22 N-000059 )
-  ( 23 N-000044 )
-  ( 24 GND )
-  ( 25 /P1.18 )
-  ( 26 /P1.19 )
-  ( 27 /P1.20 )
-  ( 28 /P1.22 )
-  ( 29 /P1.23 )
-  ( 30 /P1.24 )
-  ( 31 /P1.25 )
-  ( 32 /P1.26 )
-  ( 33 GND )
-  ( 34 +3.3V )
-  ( 35 /P1.28 )
-  ( 36 /P1.29 )
-  ( 37 /P0.0 )
-  ( 38 /P0.1 )
-  ( 39 /P0.10 )
-  ( 40 /P0.11 )
-  ( 41 N-000018 )
-  ( 42 +3.3V )
-  ( 43 GND )
-  ( 44 /P0.22 )
-  ( 45 /P0.18 )
-  ( 46 /P0.17 )
-  ( 47 /P0.15 )
-  ( 48 /P0.16 )
-  ( 49 /P2.9 )
-  ( 50 /P2.8 )
-  ( 51 /P2.7 )
-  ( 52 /P2.6 )
-  ( 53 /P2.5 )
-  ( 54 /P2.4 )
-  ( 55 /P2.3 )
-  ( 56 +3.3V )
-  ( 57 GND )
-  ( 58 /P2.2 )
-  ( 59 /P2.1 )
-  ( 60 /P2.0 )
-  ( 61 /P0.9 )
-  ( 62 /P0.8 )
-  ( 63 /P0.7 )
-  ( 64 /P0.6 )
-  ( 65 /P4.28 )
-  ( 66 GND )
-  ( 67 +3.3V )
-  ( 68 /P4.29 )
-  ( 69 /P1.15 )
-  ( 70 /P1.14 )
-  ( 71 /P1.10 )
-  ( 72 /P1.9 )
-  ( 73 /P1.8 )
-  ( 74 /P1.4 )
-  ( 75 /P1.1 )
-  ( 76 /P1.0 )
-  ( 77 +3.3V )
-  ( 78 GND )
-  ( 79 /P0.2 )
-  ( 80 /P0.3 )
+ ( /4D9FD554 $noname  C331 0.1uf {Lib=C_MINI}
+  (    1 +3.3V )
+  (    2 GND )
  )
- ( /4D9FCB81 USB_B J1 USB
-  ( 1 VBUS )
-  ( 2 N-000068 )
-  ( 3 N-000071 )
-  ( 4 GND )
-  ( 5 ? )
-  ( 6 ? )
+ ( /4D9FD4C0 $noname  U_REG1 1117 {Lib=1117}
+  (    1 GND )
+  (    2 +3.3V )
+  (    3 /PWR )
+  (    4 +3.3V )
  )
- ( /4DA0FD3F PIN_ARRAY_3X1 JP2 JUMPER-3
-  ( 1 VBUS )
-  ( 2 N-000066 )
-  ( 3 +5V )
+ ( /4D9FCF9B $noname  R6 1K5 {Lib=R_MINI}
+  (    1 N-000064 )
+  (    2 +3.3V )
  )
- ( /4DA08348 PIN_ARRAY_2X1 JPRG1 JUMPER-2
-  ( 1 GND )
-  ( 2 N-000018 )
+ ( /4D9FCC88 $noname  R4 33R {Lib=R_MINI}
+  (    1 N-000074 )
+  (    2 N-000058 )
  )
- ( /4DA9B21C USB_A J_HOST1 USB_2
-  ( 1 +5V )
-  ( 2 N-000068 )
-  ( 3 N-000071 )
-  ( 4 GND )
+ ( /4D9FCC84 $noname  R5 33R {Lib=R_MINI}
+  (    1 N-000064 )
+  (    2 N-000059 )
  )
- ( /4DA084A3 JACK_ALIM J_PWR1 DC_POWER_JACK
-  ( 1 +5V )
-  ( 2 GND )
-  ( 3 GND )
+ ( /4D9FCC03 $noname  R3 10K {Lib=R_MINI}
+  (    1 GND )
+  (    2 N-000060 )
  )
- ( /4DB989BC LEDV LED1 LED
-  ( 1 N-000067 )
-  ( 2 /P1.18 )
+ ( /4D9FCBFC $noname  R2 10K {Lib=R_MINI}
+  (    1 VBUS )
+  (    2 N-000060 )
  )
- ( /4DB98A0B LEDV LED2 LED
-  ( 1 N-000074 )
-  ( 2 GND )
+ ( /4D9FCB81 $noname  J5 USB_DEV {Lib=USB}
+  (    1 VBUS )
+  (    2 N-000074 )
+  (    3 N-000064 )
+  (    4 GND )
+  (    5 ? )
+  (    6 ? )
  )
- ( /4DA4F950 pin_array_4x2 P1 CONN_4X2
-  ( 1 +3.3V )
-  ( 2 GND )
-  ( 3 /TCK )
-  ( 4 /TDO )
-  ( 5 /TDI )
-  ( 6 /TMS )
-  ( 7 /TRST )
-  ( 8 GND )
+ ( /4D9FC2AC $noname  X2 25Mhz {Lib=CRYSTAL_MINI}
+  (    1 N-000046 )
+  (    2 N-000057 )
  )
- ( /4DA07745 Pin_Array_Port_25x2_Polarized P_IO1 CONN_25X2
-  ( 1 GND )
-  ( 2 GND )
-  ( 3 /P1.18 )
-  ( 4 /P1.19 )
-  ( 5 /P1.20 )
-  ( 6 /P1.22 )
-  ( 7 /P1.23 )
-  ( 8 /P1.24 )
-  ( 9 /P1.25 )
-  ( 10 /P1.26 )
-  ( 11 /P1.28 )
-  ( 12 /P1.29 )
-  ( 13 /P0.0 )
-  ( 14 /P0.1 )
-  ( 15 /P0.10 )
-  ( 16 /P0.11 )
-  ( 17 /P0.22 )
-  ( 18 /P0.18 )
-  ( 19 /P0.17 )
-  ( 20 /P0.15 )
-  ( 21 /P0.16 )
-  ( 22 /P2.9 )
-  ( 23 /P2.8 )
-  ( 24 /P2.7 )
-  ( 25 /P2.6 )
-  ( 26 /P2.5 )
-  ( 27 /P2.4 )
-  ( 28 /P2.3 )
-  ( 29 /P2.2 )
-  ( 30 /P2.1 )
-  ( 31 /P2.0 )
-  ( 32 /P0.9 )
-  ( 33 /P0.8 )
-  ( 34 /P0.7 )
-  ( 35 /P0.6 )
-  ( 36 /P4.28 )
-  ( 37 /P4.29 )
-  ( 38 /P1.15 )
-  ( 39 /P1.14 )
-  ( 40 /P1.10 )
-  ( 41 /P1.9 )
-  ( 42 /P1.8 )
-  ( 43 /P1.4 )
-  ( 44 /P1.1 )
-  ( 45 /P1.0 )
-  ( 46 /P0.2 )
-  ( 47 /P0.3 )
-  ( 48 /RESET )
-  ( 49 +3.3V )
-  ( 50 +3.3V )
+ ( /4D9FBF77 $noname  SW1 SWITCH_PUSHBUTTON {Lib=SWITCH_PUSHBUTTON}
+  (    1 GND )
+  (    2 /RESET )
  )
- ( /4D9FBF0A SM0805_Opendous R1 10K
-  ( 1 /RESET )
-  ( 2 +3.3V )
+ ( /4D9FBF16 $noname  C1 0.1uF {Lib=C_MINI}
+  (    1 /RESET )
+  (    2 GND )
  )
- ( /4D9FCBFC SM0805_Opendous R2 10K
-  ( 1 VBUS )
-  ( 2 N-000069 )
+ ( /4D9FBF0A $noname  R1 10K {Lib=R_MINI}
+  (    1 /RESET )
+  (    2 +3.3V )
  )
- ( /4D9FCC03 SM0805_Opendous R3 10K
-  ( 1 GND )
-  ( 2 N-000069 )
+ ( /4D9FBEC5 $noname  C5 18pf {Lib=C_MINI}
+  (    1 GND )
+  (    2 N-000057 )
  )
- ( /4D9FCC88 SM0805_Opendous R4 33R
-  ( 1 N-000068 )
-  ( 2 N-000044 )
+ ( /4D9FBEC2 $noname  C4 18pf {Lib=C_MINI}
+  (    1 GND )
+  (    2 N-000046 )
  )
- ( /4D9FCC84 SM0805_Opendous R5 33R
-  ( 1 N-000071 )
-  ( 2 N-000059 )
+ ( /4D9FBEBE $noname  C3 18pf {Lib=C_MINI}
+  (    1 GND )
+  (    2 N-000040 )
  )
- ( /4D9FCF9B SM0805_Opendous R6 1K5
-  ( 1 N-000071 )
-  ( 2 +3.3V )
+ ( /4D9FBEB8 $noname  C2 18pf {Lib=C_MINI}
+  (    1 GND )
+  (    2 N-000063 )
  )
- ( /4DA082F4 SM0805_Opendous R7 10K
-  ( 1 N-000018 )
-  ( 2 +3.3V )
+ ( /4D9FBEB2 $noname  X1 32.768kHz {Lib=CRYSTAL_MINI}
+  (    1 N-000040 )
+  (    2 N-000063 )
  )
- ( /4DA083A3 SM0805_Opendous R8 1K
-  ( 1 +3.3V )
-  ( 2 GND )
+ ( /4D9FBB89 $noname  C12 0.1uf {Lib=C_MINI}
+  (    1 GND )
+  (    2 +3.3V )
  )
- ( /4DB989D1 SM0805_Opendous R9 10K
-  ( 1 +3.3V )
-  ( 2 N-000067 )
+ ( /4D9FBB86 $noname  C11 0.1uf {Lib=C_MINI}
+  (    1 GND )
+  (    2 +3.3V )
  )
- ( /4DB98A0A SM0805_Opendous R10 10K
-  ( 1 +3.3V )
-  ( 2 N-000074 )
+ ( /4D9FBB78 $noname  C10 0.1uf {Lib=C_MINI}
+  (    1 GND )
+  (    2 +3.3V )
  )
- ( /4D9FBF77 Switch_TH_TL59 SW1 SWITCH_PUSHBUTTON
-  ( 1 GND )
-  ( 2 /RESET )
+ ( /4D9FBB25 $noname  C6 0.1uf {Lib=C_MINI}
+  (    1 GND )
+  (    2 +3.3V )
  )
- ( /4D9FD4C0 SOT223_Opendous U_REG1 1117
-  ( 1 GND )
-  ( 2 +3.3V )
-  ( 3 N-000066 )
-  ( 4 +3.3V )
+ ( /4D9FBB1B $noname  C7 0.1uf {Lib=C_MINI}
+  (    1 GND )
+  (    2 +3.3V )
  )
- ( /4D9FBEB2 QMONTRE X1 32.768kHz
-  ( 1 N-000064 )
-  ( 2 N-000065 )
+ ( /4D9FBB17 $noname  C8 0.1uf {Lib=C_MINI}
+  (    1 GND )
+  (    2 +3.3V )
  )
- ( /4D9FC2AC HC49-US_Minimized X2 25Mhz
-  ( 1 N-000057 )
-  ( 2 N-000058 )
+ ( /4D9FB60F $noname  C9 0.1uf {Lib=C_MINI}
+  (    1 GND )
+  (    2 +3.3V )
+ )
+ ( /4D9FB5F8 $noname  IC1 LPC175X {Lib=LPC175X}
+  (    1 /TDO )
+  (    2 /TDI )
+  (    3 /TMS )
+  (    4 /TRST )
+  (    5 /TCK )
+  (    6 ? )
+  (    7 ? )
+  (    8 +3.3V )
+  (    9 GND )
+  (   10 +3.3V )
+  (   11 ? )
+  (   12 GND )
+  (   13 N-000040 )
+  (   14 /RESET )
+  (   15 N-000063 )
+  (   16 +3.3V )
+  (   17 ? )
+  (   18 N-000060 )
+  (   19 N-000057 )
+  (   20 N-000046 )
+  (   21 +3.3V )
+  (   22 N-000059 )
+  (   23 N-000058 )
+  (   24 GND )
+  (   25 /P1.18 )
+  (   26 /P1.19 )
+  (   27 /P1.20 )
+  (   28 /P1.22 )
+  (   29 /P1.23 )
+  (   30 /P1.24 )
+  (   31 /P1.25 )
+  (   32 /P1.26 )
+  (   33 GND )
+  (   34 +3.3V )
+  (   35 /P1.28 )
+  (   36 /P1.29 )
+  (   37 /P0.0 )
+  (   38 /P0.1 )
+  (   39 /P0.10 )
+  (   40 /P0.11 )
+  (   41 N-000067 )
+  (   42 +3.3V )
+  (   43 GND )
+  (   44 /P0.22 )
+  (   45 /P0.18 )
+  (   46 /P0.17 )
+  (   47 /P0.15 )
+  (   48 /P0.16 )
+  (   49 /P2.9 )
+  (   50 /P2.8 )
+  (   51 /P2.7 )
+  (   52 /P2.6 )
+  (   53 /P2.5 )
+  (   54 /P2.4 )
+  (   55 /P2.3 )
+  (   56 +3.3V )
+  (   57 GND )
+  (   58 /P2.2 )
+  (   59 /P2.1 )
+  (   60 /P2.0 )
+  (   61 /P0.9 )
+  (   62 /P0.8 )
+  (   63 /P0.7 )
+  (   64 /P0.6 )
+  (   65 /P4.28 )
+  (   66 GND )
+  (   67 +3.3V )
+  (   68 /P4.29 )
+  (   69 /P1.15 )
+  (   70 /P1.14 )
+  (   71 /P1.10 )
+  (   72 /P1.9 )
+  (   73 /P1.8 )
+  (   74 /P1.4 )
+  (   75 /P1.1 )
+  (   76 /P1.0 )
+  (   77 +3.3V )
+  (   78 GND )
+  (   79 /P0.2 )
+  (   80 /P0.3 )
  )
 )
 *
 { Allowed footprints by component:
-$component LED1
+$component LED2
  LED-3MM
  LED-5MM
  LED-10MM
@@ -310,7 +313,7 @@ $component LED1
  LED-1206
  LEDV
 $endlist
-$component LED2
+$component LED1
  LED-3MM
  LED-5MM
  LED-10MM
@@ -321,3 +324,289 @@ $component LED2
 $endlist
 $endfootprintlist
 }
+{ Pin List by Nets
+Net 1 "+3.3V" "+3.3V"
+ C6 2
+ R8 1
+ C7 2
+ C8 2
+ C9 2
+ R1 2
+ R9 1
+ P_IO1 2
+ R7 2
+ IC1 34
+ IC1 8
+ IC1 42
+ IC1 10
+ IC1 21
+ IC1 67
+ IC1 77
+ IC1 16
+ IC1 56
+ P_IO1 49
+ P1 1
+ C12 2
+ C11 2
+ C10 2
+ C332 1
+ R6 2
+ U_REG1 4
+ R10 1
+ C331 1
+ U_REG1 2
+Net 2 "/P1.22" "P1.22"
+ IC1 28
+ P_IO1 6
+Net 3 "/P1.23" "P1.23"
+ P_IO1 7
+ IC1 29
+Net 4 "/P1.24" "P1.24"
+ P_IO1 8
+ IC1 30
+Net 5 "/P1.25" "P1.25"
+ P_IO1 9
+ IC1 31
+Net 6 "/P1.26" "P1.26"
+ IC1 32
+ P_IO1 10
+Net 7 "/P0.15" "P0.15"
+ IC1 47
+ P_IO1 20
+Net 8 "/P2.1" "P2.1"
+ IC1 59
+ P_IO1 30
+Net 9 "/P1.28" "P1.28"
+ IC1 35
+ P_IO1 11
+Net 10 "/P0.16" "P0.16"
+ P_IO1 21
+ IC1 48
+Net 11 "/P2.0" "P2.0"
+ P_IO1 31
+ IC1 60
+Net 12 "/P0.22" "P0.22"
+ P_IO1 17
+ IC1 44
+Net 13 "/P2.4" "P2.4"
+ P_IO1 27
+ IC1 54
+Net 14 "/P0.3" "P0.3"
+ IC1 80
+ P_IO1 47
+Net 15 "/P0.18" "P0.18"
+ IC1 45
+ P_IO1 18
+Net 16 "/P2.3" "P2.3"
+ IC1 55
+ P_IO1 28
+Net 17 "/RESET" "RESET"
+ SW1 2
+ P_IO1 48
+ C1 1
+ R1 1
+ IC1 14
+Net 18 "/P0.17" "P0.17"
+ IC1 46
+ P_IO1 19
+Net 19 "/P2.2" "P2.2"
+ IC1 58
+ P_IO1 29
+Net 20 "/P1.29" "P1.29"
+ IC1 36
+ P_IO1 12
+Net 21 "/P2.9" "P2.9"
+ P_IO1 22
+ IC1 49
+Net 22 "/P0.0" "P0.0"
+ IC1 37
+ P_IO1 13
+Net 23 "/P2.8" "P2.8"
+ P_IO1 23
+ IC1 50
+Net 24 "/P1.4" "P1.4"
+ P_IO1 43
+ IC1 74
+Net 25 "/P0.1" "P0.1"
+ IC1 38
+ P_IO1 14
+Net 26 "/P2.7" "P2.7"
+ IC1 51
+ P_IO1 24
+Net 27 "/P1.1" "P1.1"
+ IC1 75
+ P_IO1 44
+Net 28 "/P0.10" "P0.10"
+ P_IO1 15
+ IC1 39
+Net 29 "/P2.6" "P2.6"
+ P_IO1 25
+ IC1 52
+Net 30 "/P0.6" "P0.6"
+ P_IO1 35
+ IC1 64
+Net 31 "/P1.0" "P1.0"
+ IC1 76
+ P_IO1 45
+Net 32 "/P0.11" "P0.11"
+ P_IO1 16
+ IC1 40
+Net 33 "/P2.5" "P2.5"
+ IC1 53
+ P_IO1 26
+Net 34 "/P4.28" "P4.28"
+ P_IO1 36
+ IC1 65
+Net 35 "/P0.2" "P0.2"
+ IC1 79
+ P_IO1 46
+Net 36 "/P0.9" "P0.9"
+ P_IO1 32
+ IC1 61
+Net 37 "/P1.10" "P1.10"
+ P_IO1 40
+ IC1 71
+Net 38 "/P0.8" "P0.8"
+ P_IO1 33
+ IC1 62
+Net 39 "/P1.9" "P1.9"
+ IC1 72
+ P_IO1 41
+Net 40 "" ""
+ X1 1
+ C3 2
+ IC1 13
+Net 41 "/P0.7" "P0.7"
+ P_IO1 34
+ IC1 63
+Net 42 "/P1.8" "P1.8"
+ P_IO1 42
+ IC1 73
+Net 43 "/TRST" "TRST"
+ IC1 4
+ P1 7
+Net 46 "" ""
+ IC1 20
+ C4 2
+ X2 1
+Net 47 "/P1.14" "P1.14"
+ P_IO1 39
+ IC1 70
+Net 49 "/P4.29" "P4.29"
+ IC1 68
+ P_IO1 37
+Net 50 "/P1.15" "P1.15"
+ IC1 69
+ P_IO1 38
+Net 51 "/P1.18" "P1.18"
+ LED1 2
+ IC1 25
+ P_IO1 3
+Net 52 "/P1.19" "P1.19"
+ P_IO1 4
+ IC1 26
+Net 54 "/P1.20" "P1.20"
+ P_IO1 5
+ IC1 27
+Net 57 "" ""
+ X2 2
+ C5 2
+ IC1 19
+Net 58 "" ""
+ IC1 23
+ R4 2
+Net 59 "" ""
+ IC1 22
+ R5 2
+Net 60 "" ""
+ R2 2
+ R3 2
+ IC1 18
+Net 61 "VBUS" "VBUS"
+ J5 1
+ J4 1
+ R2 1
+ J3 2
+Net 62 "/TDI" "TDI"
+ IC1 2
+ P1 5
+Net 63 "" ""
+ X1 2
+ C2 2
+ IC1 15
+Net 64 "" ""
+ J4 3
+ R6 1
+ J5 3
+ R5 1
+Net 65 "/PWR_SELF" "PWR_SELF"
+ J_PWR1 1
+ J2 2
+Net 66 "" ""
+ LED2 1
+ R10 2
+Net 67 "" ""
+ J1 2
+ R7 1
+ IC1 41
+Net 68 "" ""
+ LED1 1
+ R9 2
+Net 69 "/TCK" "TCK"
+ P1 3
+ IC1 5
+Net 70 "/PWR" "PWR"
+ J2 1
+ J3 1
+ C_VIN1 1
+ U_REG1 3
+Net 71 "/TMS" "TMS"
+ IC1 3
+ P1 6
+Net 72 "/TDO" "TDO"
+ P1 4
+ IC1 1
+Net 73 "GND" "GND"
+ IC1 9
+ IC1 57
+ IC1 78
+ IC1 66
+ P1 8
+ SW1 1
+ R3 1
+ J_PWR1 2
+ P_IO1 50
+ P_IO1 1
+ U_REG1 1
+ C331 2
+ C_VIN1 2
+ C332 2
+ IC1 24
+ IC1 43
+ IC1 33
+ IC1 12
+ J1 1
+ R8 2
+ J_PWR1 3
+ J4 4
+ C2 1
+ C3 1
+ C4 1
+ C5 1
+ C1 2
+ C9 1
+ C8 1
+ C7 1
+ C6 1
+ C10 1
+ C11 1
+ J5 4
+ P1 2
+ LED2 2
+ C12 1
+Net 74 "" ""
+ R4 1
+ J4 2
+ J5 2
+}
+#End

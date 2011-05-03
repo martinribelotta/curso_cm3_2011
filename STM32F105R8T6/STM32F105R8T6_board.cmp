@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by CvPCB (2011-03-30)-stable date = mié 27 abr 2011 00:03:58 ART
+Cmp-Mod V01 Created by CvPCB (2011-03-30 BZR 2932)-stable date = 02/05/2011 02:26:02 a.m.
 
 BeginCmp
 TimeStamp = /4DA1F7D4;
@@ -99,6 +99,13 @@ IdModule  = C1V7;
 EndCmp
 
 BeginCmp
+TimeStamp = /4DBC9552;
+Reference = C_VDD3_1;
+ValeurCmp = C;
+IdModule  = C1V7;
+EndCmp
+
+BeginCmp
 TimeStamp = /4DA22DF3;
 Reference = J2;
 ValeurCmp = DC_POWER_JACK;
@@ -134,17 +141,24 @@ IdModule  = pin_array_4x2;
 EndCmp
 
 BeginCmp
-TimeStamp = /4DACE6C6;
-Reference = PIO1;
-ValeurCmp = CONN_10X2;
-IdModule  = Pin_Array_Port_10x2_Polarized;
+TimeStamp = /4DBDEF43;
+Reference = LED1;
+ValeurCmp = LED;
+IdModule  = LEDV;
 EndCmp
 
 BeginCmp
-TimeStamp = /4DACE6C9;
-Reference = PIO2;
-ValeurCmp = CONN_10X2;
-IdModule  = Pin_Array_Port_10x2_Polarized;
+TimeStamp = /4DBDEF72;
+Reference = LED2;
+ValeurCmp = LED;
+IdModule  = LEDV;
+EndCmp
+
+BeginCmp
+TimeStamp = /4DBDB8CC;
+Reference = PIO1;
+ValeurCmp = CONN_20X2;
+IdModule  = PIN_ARRAY_20X2;
 EndCmp
 
 BeginCmp
@@ -183,8 +197,29 @@ IdModule  = SM0805;
 EndCmp
 
 BeginCmp
+TimeStamp = /4DBCB717;
+Reference = R6;
+ValeurCmp = R;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
 TimeStamp = /4DACDC73;
 Reference = R7;
+ValeurCmp = R;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /4DBDEF29;
+Reference = R8;
+ValeurCmp = R;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /4DBDEF74;
+Reference = R9;
 ValeurCmp = R;
 IdModule  = SM0805;
 EndCmp
@@ -200,7 +235,7 @@ BeginCmp
 TimeStamp = /4DA2298C;
 Reference = U1;
 ValeurCmp = STM32F105R8T6;
-IdModule  = LQFP64_Opendous;
+IdModule  = LQFP64_0.5mm_Pitch_10x10mm_FT2232;
 EndCmp
 
 BeginCmp
@@ -235,7 +270,7 @@ BeginCmp
 TimeStamp = /4DA1F7C5;
 Reference = X2;
 ValeurCmp = CRYSTAL;
-IdModule  = HC49-US_Minimized;
+IdModule  = HC-49V;
 EndCmp
 
 EndListe
