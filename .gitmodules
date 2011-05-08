@@ -1,0 +1,3 @@
+[submodule "doc"]
+	path = doc
+	url = git@github.com:martinribelotta/curso_cm3_2011_docs.git
