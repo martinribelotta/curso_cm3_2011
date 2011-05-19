@@ -1,4 +1,4 @@
-PCBNEW-LibModule-V1  02/05/2011 04:07:46 a.m.
+PCBNEW-LibModule-V1  11/05/2011 11:11:58 p.m.
 # encoding utf-8
 $INDEX
 LQFP64_0.5mm_Pitch_10x10mm_FT2232

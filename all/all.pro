@@ -1,8 +1,16 @@
-update=15/05/2011 05:20:40 p.m.
+update=18/05/2011 10:41:31 p.m.
 version=1
-last_client=cvpcb
-[general]
+last_client=pcbnew
+[cvpcb]
 version=1
+NetITyp=0
+NetIExt=.net
+PkgIExt=.pkg
+NetDir=
+LibDir=
+NetType=0
+[cvpcb/libraries]
+EquName1=devcms
 [eeschema]
 version=1
 LibDir=
@@ -33,6 +41,8 @@ offY_E=0
 RptD_X=0
 RptD_Y=100
 RptLab=1
+SimCmd=
+UseNetN=0
 LabSize=60
 [eeschema/libraries]
 LibName1=power
@@ -65,14 +75,13 @@ LibName27=opto
 LibName28=atmel
 LibName29=contrib
 LibName30=valves
-LibName31=libs/lm3s6965
-LibName32=libs/opendous
-LibName33=libs/j00-0062nl
+[general]
+version=1
 [pcbnew]
 version=1
-PadDrlX=0
-PadDimH=400
-PadDimV=100
+PadDrlX=320
+PadDimH=600
+PadDimV=600
 BoardThickness=630
 TxtPcbV=800
 TxtPcbH=600
@@ -84,13 +93,9 @@ DrawLar=150
 EdgeLar=150
 TxtLar=120
 MSegLar=150
-LastNetListRead=lm3s.net
+LastNetListRead=
 [pcbnew/libraries]
-LibName1=modules/lm3s_board
-LibName2=C:/Users/user001/Documents/curso_cm3_2011_chinos/STM32F105R8T6/modules/stm32f105r8t6_board
 LibDir=
-[cvpcb]
-version=1
-NetIExt=net
-[cvpcb/libraries]
-EquName1=devcms
+LibName1=C:/Users/user001/Documents/curso_cm3_2011_chinos/LM3S/modules/lm3s_board
+LibName2=C:/Users/user001/Documents/curso_cm3_2011_chinos/lpc1754/modules/board_lpc
+LibName3=C:/Users/user001/Documents/curso_cm3_2011_chinos/STM32F105R8T6/modules/stm32f105r8t6_board

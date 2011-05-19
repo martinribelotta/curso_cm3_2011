@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by CvPCB (2011-03-30 BZR 2932)-stable date = 06/05/2011 12:28:23 a.m.
+Cmp-Mod V01 Created by CvPCB (2011-03-30 BZR 2932)-stable date = 15/05/2011 05:20:52 p.m.
 
 BeginCmp
 TimeStamp = /4DBF94E9;
@@ -50,7 +50,7 @@ IdModule  = SM0805;
 EndCmp
 
 BeginCmp
-TimeStamp = /4DBF95B0;
+TimeStamp = /4DD03300;
 Reference = C8;
 ValeurCmp = C;
 IdModule  = SM0805;
@@ -94,20 +94,6 @@ EndCmp
 BeginCmp
 TimeStamp = /4DBF9566;
 Reference = C15;
-ValeurCmp = C;
-IdModule  = SM0805;
-EndCmp
-
-BeginCmp
-TimeStamp = /4DBF954B;
-Reference = C16;
-ValeurCmp = C;
-IdModule  = SM0805;
-EndCmp
-
-BeginCmp
-TimeStamp = /4DBF9601;
-Reference = C17;
 ValeurCmp = C;
 IdModule  = SM0805;
 EndCmp
@@ -187,27 +173,6 @@ TimeStamp = /4DC348FD;
 Reference = J1;
 ValeurCmp = DC_POWER_JACK;
 IdModule  = JACK_ALIM;
-EndCmp
-
-BeginCmp
-TimeStamp = /4DC2309E;
-Reference = JSER0;
-ValeurCmp = CONN_3;
-IdModule  = PIN_ARRAY_3X1;
-EndCmp
-
-BeginCmp
-TimeStamp = /4DC23096;
-Reference = JSER1;
-ValeurCmp = CONN_3;
-IdModule  = PIN_ARRAY_3X1;
-EndCmp
-
-BeginCmp
-TimeStamp = /4DC2309C;
-Reference = JSER2;
-ValeurCmp = CONN_3;
-IdModule  = PIN_ARRAY_3X1;
 EndCmp
 
 BeginCmp
@@ -323,10 +288,10 @@ IdModule  = SM0805;
 EndCmp
 
 BeginCmp
-TimeStamp = /4DC23C17;
-Reference = SPI0;
-ValeurCmp = CONN_3X2;
-IdModule  = pin_array_3x2;
+TimeStamp = /4DD0338F;
+Reference = SW1;
+ValeurCmp = SW_PUSH;
+IdModule  = Switch_TH_TL59;
 EndCmp
 
 BeginCmp
